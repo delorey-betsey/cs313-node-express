@@ -7,7 +7,7 @@ app.use(express.static("public"));
 app.set("views", "views");
 app.set("view engine", "ejs");
 
-app.get("/", function(req, res) {
+app.get("/home", function(req, res) {
 	console.log("Received a request for /");
 
 	res.write("This is the root.");
